@@ -14,13 +14,14 @@ namespace C968_Software_Project
         {
             InitializeComponent();
 
+            _inventory = new Models.Inventory();
+
             _frmAddPart = new Forms.AddPart();
             _frmModifyPart = new Forms.ModifyPart();
 
             _frmAddProduct = new Forms.AddProduct();
             _frmModifyProduct = new Forms.ModifyProduct();
 
-            _inventory = new Models.Inventory();
         }
 
         private void ShowInventory()
@@ -31,6 +32,7 @@ namespace C968_Software_Project
 
         private void btnAddPart_Click(object sender, EventArgs e)
         {
+            _frmAddPart.SetInventory(_inventory);
             _frmAddPart.ShowDialog();
         }
         private void btnModifyPart_Click(object sender, EventArgs e)

@@ -42,6 +42,8 @@
             this.btnModifyProduct = new System.Windows.Forms.Button();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtLookupProduct = new System.Windows.Forms.TextBox();
+            this.btnLookupProduct = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
@@ -49,9 +51,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(8, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 25);
+            this.label1.Size = new System.Drawing.Size(166, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Inventory Managment System";
             // 
@@ -60,12 +63,13 @@
             this.dgvParts.AllowUserToAddRows = false;
             this.dgvParts.AllowUserToDeleteRows = false;
             this.dgvParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvParts.Location = new System.Drawing.Point(12, 103);
+            this.dgvParts.Location = new System.Drawing.Point(8, 62);
+            this.dgvParts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvParts.Name = "dgvParts";
             this.dgvParts.ReadOnly = true;
             this.dgvParts.RowHeadersWidth = 62;
             this.dgvParts.RowTemplate.Height = 33;
-            this.dgvParts.Size = new System.Drawing.Size(360, 225);
+            this.dgvParts.Size = new System.Drawing.Size(252, 135);
             this.dgvParts.TabIndex = 1;
             // 
             // dgvProducts
@@ -73,46 +77,51 @@
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AllowUserToDeleteRows = false;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Location = new System.Drawing.Point(428, 103);
+            this.dgvProducts.Location = new System.Drawing.Point(300, 62);
+            this.dgvProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.ReadOnly = true;
             this.dgvProducts.RowHeadersWidth = 62;
             this.dgvProducts.RowTemplate.Height = 33;
-            this.dgvProducts.Size = new System.Drawing.Size(360, 225);
+            this.dgvProducts.Size = new System.Drawing.Size(252, 135);
             this.dgvProducts.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 75);
+            this.label2.Location = new System.Drawing.Point(8, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 25);
+            this.label2.Size = new System.Drawing.Size(33, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Parts";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(428, 75);
+            this.label3.Location = new System.Drawing.Point(300, 45);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 25);
+            this.label3.Size = new System.Drawing.Size(54, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Products";
             // 
             // btnDeletePart
             // 
-            this.btnDeletePart.Location = new System.Drawing.Point(292, 334);
+            this.btnDeletePart.Location = new System.Drawing.Point(204, 200);
+            this.btnDeletePart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeletePart.Name = "btnDeletePart";
-            this.btnDeletePart.Size = new System.Drawing.Size(80, 43);
+            this.btnDeletePart.Size = new System.Drawing.Size(56, 26);
             this.btnDeletePart.TabIndex = 5;
             this.btnDeletePart.Text = "Delete";
             this.btnDeletePart.UseVisualStyleBackColor = true;
             // 
             // btnModifyPart
             // 
-            this.btnModifyPart.Location = new System.Drawing.Point(206, 334);
+            this.btnModifyPart.Location = new System.Drawing.Point(144, 200);
+            this.btnModifyPart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModifyPart.Name = "btnModifyPart";
-            this.btnModifyPart.Size = new System.Drawing.Size(80, 43);
+            this.btnModifyPart.Size = new System.Drawing.Size(56, 26);
             this.btnModifyPart.TabIndex = 6;
             this.btnModifyPart.Text = "Modify";
             this.btnModifyPart.UseVisualStyleBackColor = true;
@@ -120,9 +129,10 @@
             // 
             // btnAddPart
             // 
-            this.btnAddPart.Location = new System.Drawing.Point(120, 334);
+            this.btnAddPart.Location = new System.Drawing.Point(84, 200);
+            this.btnAddPart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddPart.Name = "btnAddPart";
-            this.btnAddPart.Size = new System.Drawing.Size(80, 43);
+            this.btnAddPart.Size = new System.Drawing.Size(56, 26);
             this.btnAddPart.TabIndex = 7;
             this.btnAddPart.Text = "Add";
             this.btnAddPart.UseVisualStyleBackColor = true;
@@ -130,25 +140,28 @@
             // 
             // btnLookupPart
             // 
-            this.btnLookupPart.Location = new System.Drawing.Point(136, 65);
+            this.btnLookupPart.Location = new System.Drawing.Point(95, 35);
+            this.btnLookupPart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLookupPart.Name = "btnLookupPart";
-            this.btnLookupPart.Size = new System.Drawing.Size(80, 32);
+            this.btnLookupPart.Size = new System.Drawing.Size(56, 23);
             this.btnLookupPart.TabIndex = 8;
             this.btnLookupPart.Text = "Search";
             this.btnLookupPart.UseVisualStyleBackColor = true;
             // 
             // txtLookupPart
             // 
-            this.txtLookupPart.Location = new System.Drawing.Point(222, 65);
+            this.txtLookupPart.Location = new System.Drawing.Point(155, 35);
+            this.txtLookupPart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLookupPart.Name = "txtLookupPart";
-            this.txtLookupPart.Size = new System.Drawing.Size(150, 31);
+            this.txtLookupPart.Size = new System.Drawing.Size(106, 23);
             this.txtLookupPart.TabIndex = 9;
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Location = new System.Drawing.Point(536, 334);
+            this.btnAddProduct.Location = new System.Drawing.Point(375, 200);
+            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(80, 43);
+            this.btnAddProduct.Size = new System.Drawing.Size(56, 26);
             this.btnAddProduct.TabIndex = 12;
             this.btnAddProduct.Text = "Add";
             this.btnAddProduct.UseVisualStyleBackColor = true;
@@ -156,9 +169,10 @@
             // 
             // btnModifyProduct
             // 
-            this.btnModifyProduct.Location = new System.Drawing.Point(622, 334);
+            this.btnModifyProduct.Location = new System.Drawing.Point(435, 200);
+            this.btnModifyProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModifyProduct.Name = "btnModifyProduct";
-            this.btnModifyProduct.Size = new System.Drawing.Size(80, 43);
+            this.btnModifyProduct.Size = new System.Drawing.Size(56, 26);
             this.btnModifyProduct.TabIndex = 11;
             this.btnModifyProduct.Text = "Modify";
             this.btnModifyProduct.UseVisualStyleBackColor = true;
@@ -166,28 +180,50 @@
             // 
             // btnDeleteProduct
             // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(708, 334);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(496, 200);
+            this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(80, 43);
+            this.btnDeleteProduct.Size = new System.Drawing.Size(56, 26);
             this.btnDeleteProduct.TabIndex = 10;
             this.btnDeleteProduct.Text = "Delete";
             this.btnDeleteProduct.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(708, 395);
+            this.btnExit.Location = new System.Drawing.Point(496, 237);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(80, 43);
+            this.btnExit.Size = new System.Drawing.Size(56, 26);
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // txtLookupProduct
+            // 
+            this.txtLookupProduct.Location = new System.Drawing.Point(446, 35);
+            this.txtLookupProduct.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLookupProduct.Name = "txtLookupProduct";
+            this.txtLookupProduct.Size = new System.Drawing.Size(106, 23);
+            this.txtLookupProduct.TabIndex = 15;
+            // 
+            // btnLookupProduct
+            // 
+            this.btnLookupProduct.Location = new System.Drawing.Point(386, 35);
+            this.btnLookupProduct.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLookupProduct.Name = "btnLookupProduct";
+            this.btnLookupProduct.Size = new System.Drawing.Size(56, 23);
+            this.btnLookupProduct.TabIndex = 14;
+            this.btnLookupProduct.Text = "Search";
+            this.btnLookupProduct.UseVisualStyleBackColor = true;
+            // 
             // MainScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(560, 270);
+            this.Controls.Add(this.txtLookupProduct);
+            this.Controls.Add(this.btnLookupProduct);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.btnModifyProduct);
@@ -202,6 +238,7 @@
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.dgvParts);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainScreen";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainScreen_Load);
@@ -228,5 +265,7 @@
         private Button btnModifyProduct;
         private Button btnDeleteProduct;
         private Button btnExit;
+        private TextBox txtLookupProduct;
+        private Button btnLookupProduct;
     }
 }
