@@ -36,6 +36,8 @@ namespace C968_Software_Project.Forms
         public void SetInventory(Inventory inventory)
         {
             _inv = inventory;
+
+            txtId.Text = _inv.NextPartId.ToString();
         }
         private bool InventoryIsNull ()
         {

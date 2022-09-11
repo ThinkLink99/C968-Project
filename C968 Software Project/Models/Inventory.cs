@@ -6,9 +6,28 @@ namespace C968_Software_Project.Models
     {
         private BindingList<Product> _products;
         private BindingList<Part> _allParts;
+        private int _nextPartId = 0;
+        private int _nextProductId = 0;
 
         public BindingList<Product> Products => _products;
         public BindingList <Part> AllParts => _allParts;
+
+        public int NextProductId 
+        { 
+            get
+            {
+                _nextProductId++;
+                return _nextProductId;
+            }
+        }
+        public int NextPartId
+        {
+            get
+            {
+                _nextPartId++;
+                return _nextPartId;
+            }
+        }
 
         // Product functions
         public void addProduct (Product productToAdd)
